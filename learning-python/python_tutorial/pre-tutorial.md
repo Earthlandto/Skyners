@@ -246,3 +246,30 @@ Para eliminar un valor:
 
 	del mydict[1]
 	print mydict 		# {'foo': 'bar', 'mykey': 'myvalue'}
+	
+	
+### Imports 
+
+Para importar un paquete se usa la palabra clave `import` + el nombre del módulo a importar.
+
+	import math 			# import math library
+	
+	print print math.pi		# 3.14159265359
+	
+Con la función `dir(math)` podemos ver las funciones implementadas en el módulo `math`. Con la función `help(math)` tenemos acceso a la documentación de los módulos. 
+
+
+### Exceptions handling
+
+La captura de excepciones se realiza con un bloque `try-catch`. Un ejemplo trivial en el que se quiere iterar sobre una lista de 20 elementos pero la lista viene dada por el usuario, por ejemplo. Así que nosotros capturaríamos la excepción y añadiríamos tantos ceros como elementos falten:
+
+	def do_stuff_with_number(n):
+	    print n
+
+	user_list = (1, 2, 3, 4, 5)
+
+	for i in range(20):
+    	try:
+        	do_stuff_with_number(user_list[i])
+	    except IndexError: 			# Raised when accessing a non-existing index of a list
+    	    do_stuff_with_number(0)
