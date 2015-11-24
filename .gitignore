@@ -1,2 +1,3 @@
 .DS_Store
 learning-python/test*.py
+myrobots/*test*.py
