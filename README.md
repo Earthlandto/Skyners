@@ -1,4 +1,6 @@
 Skyners
 =======
 
-Repositorio privado: los que viven en los cielos.
+A little python workshop for a secret activity ;P
+
+[Under construction]
